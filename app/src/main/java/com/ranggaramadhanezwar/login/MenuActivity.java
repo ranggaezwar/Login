@@ -20,16 +20,14 @@ import java.net.URLEncoder;
 
 import cz.msebera.android.httpclient.Header;
 
-public class MenuActivity extends AppCompatActivity
-{
+public class MenuActivity extends AppCompatActivity {
     private Button _inputMahasiswa;
     private EditText _alamatEditText, _namaEditText, _nimEditText, _tahunMasukEditText, _tanggalLahirEditText;
     private EditText _tempatLahirEditText;
     private Spinner _jenisKelaminSpinner, _jpSpinner, _statusNikahSpinner;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
@@ -73,7 +71,7 @@ public class MenuActivity extends AppCompatActivity
                         "&tanggalLahir=" + tanggalLahir +
                         "&alamat=" + alamat +
                         "&jp=" + jp +
-                        "&statusNikah=" + statusNikah +
+                        "&statusPernikahan=" + statusNikah +
                         "&tahunMasuk=" + tahunMasuk;
 
                 Log.d("*tw*", url);
@@ -100,15 +98,9 @@ public class MenuActivity extends AppCompatActivity
     }
 
     private void initInputs() {
-        _alamatEditText = findViewById(R.id.alamatEditText);
-        _jenisKelaminSpinner = findViewById(R.id.jenisKelaminSpinner);
-        _jpSpinner = findViewById(R.id.jpSpinner);
-        _namaEditText = findViewById(R.id.namaEditText);
-        _nimEditText = findViewById(R.id.nimEditText);
-        _statusNikahSpinner = findViewById(R.id.statusNikahSpinner);
-        _tahunMasukEditText = findViewById(R.id.tahunMasukEditText);
-        _tanggalLahirEditText = findViewById(R.id.tanggalLahirEditText);
-        _tempatLahirEditText = findViewById(R.id.tempatLahirEditText);
+
+    }
+}
 
 
 

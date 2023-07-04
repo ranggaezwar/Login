@@ -22,12 +22,12 @@ public class CuacaAdapter extends RecyclerView.Adapter<CuacaViewHolder> {
 
     private Activity _activity;
     private List<CuacaListModel> _listModelList;
-    private CuacaRootModel rm;
+    private CuacaRootModel _rootModel;
 
     public CuacaAdapter (Activity activity,CuacaRootModel rm)
     {
         this._activity = activity;
-        this.rm = rm;
+        this._rootModel = rm;
 
         _listModelList = rm.getListModelList();
     }

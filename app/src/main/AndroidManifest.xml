@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login">
         <activity
+            android:name=".ForexMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".TampilMahasiswaActivity"
             android:exported="false" />
         <activity

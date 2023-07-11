@@ -115,8 +115,8 @@ public class CuacaAdapter extends RecyclerView.Adapter<CuacaViewHolder> {
         }
 
 
-        String iconUrl = "https://openweatherapp.org/img/wn/" + wm.getIcon() + "@2x.png";
-        Picasso.with(_activity).load(iconUrl).into(holder.cuacaImageView);
+        //String iconUrl = "https://openweatherapp.org/img/wn/" + wm.getIcon() + "@2x.png";
+        //Picasso.with(_activity).load(iconUrl).into(holder.cuacaImageView);
 
         String tanggalWaktuWib = formatWib(lm.getDt_txt());
 

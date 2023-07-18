@@ -1,5 +1,6 @@
 package com.ranggaramadhanezwar.login;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
@@ -11,7 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
-
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
@@ -21,18 +21,44 @@ import java.net.URLEncoder;
 import cz.msebera.android.httpclient.Header;
 
 public class MenuActivity extends AppCompatActivity {
-    private Button _tampilMahasiswaButton, _tampilForexButton, _tampilCuacaButton;
-    private Intent _tampilMahasiswaIntent, _tampilForexIntent, _tampilCuacaIntent;
+    private Button _tampilMahasiswaButton, _tampilForexButton, _tampilCuacaButton, _tampilImplicitButton, _tampilTabLayoutButton;
+    private Intent _tampilMahasiswaIntent, _tampilForexIntent, _tampilCuacaIntent, _tampilImplicitIntent, _tampilTabLayoutIntent;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
         initTampilMahasiswaButton();
         initTampilForexButton();
         initTampilCuacaButton();
+        initTampilImplicitIntentButton();
+        initTampilTabLayoutButton();
+    }
+
+    private void initTampilTabLayoutButton() {
+        _tampilTabLayoutButton = findViewById(R.id.tampiltabLayout);
+
+        _tampilTabLayoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                _tampilTabLayoutIntent = new Intent(getApplicationContext(), TampilTabLayout.class);
+                startActivity(_tampilTabLayoutIntent);
+            }
+        });
+    }
+
+    private void initTampilImplicitIntentButton()
+    {
+        _tampilImplicitButton = findViewById(R.id.tampilImplicitIntent);
+
+        _tampilImplicitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                _tampilImplicitIntent = new Intent(getApplicationContext(), TampilImplicitIntent.class);
+                startActivity(_tampilImplicitIntent);
+            }
+        });
     }
 
     private void initTampilCuacaButton()

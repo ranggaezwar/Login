@@ -7,6 +7,7 @@
     tools:context=".MenuActivity"
     android:columnCount="1"
     android:background="@drawable/gradient_a">
+
     <Button
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
@@ -34,4 +35,23 @@
         android:drawableLeft="@drawable/img_weather_lightning_128"
         android:text="Cuaca"
         android:id="@+id/tampilCuacaButton"></Button>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_columnWeight="1"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/boy"
+        android:text="Implicit Intent"
+        android:id="@+id/tampilImplicitIntent"></Button>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_columnWeight="1"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/boy"
+        android:text="Tab Layout"
+        android:id="@+id/tampiltabLayout"></Button>
+
 </GridLayout>

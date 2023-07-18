@@ -12,9 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login">
         <activity
+            android:name=".EcommerceFragment"
+            android:exported="false" />
+        <activity
+            android:name=".TampilTabLayout"
+            android:exported="false" />
+        <activity
+            android:name=".KampusFragment"
+            android:exported="false" />
+        <activity
+            android:name=".TampilImplicitIntent"
+            android:exported="false" />
+        <activity
             android:name=".CuacaMainActivity"
             android:exported="false"
-            android:label="Cuaca Pontianak"/>
+            android:label="Cuaca Pontianak" />
         <activity
             android:name=".ForexMainActivity"
             android:exported="false" />
